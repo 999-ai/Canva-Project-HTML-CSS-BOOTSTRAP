@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yan Yana 3 Resim (Responsive)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            background: url(Product\ and\ Service\ Catalog\ Website\ \(4\).png) no-repeat center;
+            background-size: cover;
+            height: 200vh;
+            width: 100vw;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 150px;
+        }
+
+        .image-item {
+            text-align: center;
+            margin-bottom: 20px;
+
+        }
+
+        .image-item img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .image-item p {
+            margin: 5px 0;
+            font-size: 18px;}
+
+        .text-container p+p {
+            margin-top: -30px;}
+
+        .page-arrows {
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 3px;
+            z-index: 1000;
+        }
+
+        .page-arrow {
+            font-size: 40px;
+            text-decoration: none;
+            background-color: white;
+            padding: 2px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            color: green;
+        }
+
+        .page-arrow:hover {
+            background-color: green;
+            color: white;
+        }
+
+
+        @media (max-width: 768px) {
+            .page-arrows {
+                top: auto;
+                bottom: 10px;
+                justify-content: center;
+                gap: 65px;
+            }
+
+            .page-arrow {
+                font-size: 15px;
+                padding: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-success mb-5 fw-bold">Made for you</h1>
+        <div class="row justify-content-center mt-4">
+            <div class="col-12 col-sm-6 col-md-4 image-item ">
+                <img src="a0e4103c-221f-4201-8ec6-145e4c98b79b.png" alt="Res 1" class="img-fluid">
+             
+                <p class="text-success fw-bold fs-4">Add a service</p>
+                <p class="text-success">USD 20</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 image-item">
+                <img src="e155c5f5-da42-4a38-b71e-68da7b998add.png" alt="Res 2" class="img-fluid">
+                <p class="text-success fw-bold fs-4">Add a service</p>
+                <p class="text-success">USD 20</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 image-item">
+                <img src="0b6477c7-63e8-43ab-9bfb-144a6451f946.png" alt="Res 3" class="img-fluid">
+                
+                <p class="text-success fw-bold fs-4">Add a service</p>
+                <p class="text-success">USD 15</p>
+            </div>
+        </div>
+    </div>
+    <div class="page-arrows">
+        <a href="page-5.html" class="page-arrow">&#8592;</a>
+        <a href="page7.html" class="page-arrow">&#8594;</a>
+    </div>
+
+</body>
+
+</html>
